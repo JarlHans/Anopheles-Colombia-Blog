@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*======== HEADER STYLE ====================*/
+.container-hero{
+    width: 100%;
+    min-height: 92vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header{
+    z-index: 1000;
+}
+
+.container-hero video{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 92%;
+    object-fit: cover;
+    z-index: 500;
+}
+
+/*======== OVERLAY ====================*/
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 92%;
+    background: rgba(0, 0, 0, 0.46);
+    z-index: 600;
+}
+
+/*======== TITLE STYLE ====================*/
+.title{
+    font-family: 'Red Rose', cursive;
+    font-size: 7rem;
+    color: #FFF;
+    line-height: .9;
+}
+
+.title__style{
+    font-size: 5rem;
+    text-align: center;
+    margin: 14%;
+}
+
+/*======== SEPARATOR ====================*/
+.wave{
+    width: 100%;
+    position: absolute;
+    top: 44.6rem;
+    z-index: 650;
+}
+
+/*======== BUTTON ====================*/
+/* .button{
+    margin: auto;
+    margin-top: 20px;
+    width: 7rem;
+    height: 2.3rem;
+    background-color: #69997C;
+    text-align: center;
+    line-height: 2.3rem;
+
+}
+
+.button a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #C0E7B9;
+} */
+
+/*======== LOGO ====================*/
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+    position: absolute;
+    margin-top: -11rem;
+    z-index: 700;
+}
+
+.logo img{
+    width: 13rem;
+}
+
+/*======== NAV MENU ====================*/
+.nav-menu{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    
+}
+
+.nav-item{
+    margin: 0 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #426A5A;
+}
+
+/*========  SECTION BLOGS ====================*/
+.blogs{
+    width: 80%;
+    display: flex;
+    margin: 3rem auto;
+    justify-content: space-around;
+
+}
+
+.blog{    
+    display: flex;
+    flex-direction: column-reverse;
+    width: 340px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.46);
+    border-radius: 3%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.blog:hover{
+    transform: scale(1.1);
+}
+
+.blog img{
+    width: 300px;
+    object-fit: cover;
+}
+
+/* ========== BACKGROUNDS BLOGS ================ */
+.background1{
+    background-image:linear-gradient(to right, #00000088, #00000088), url(../Images/blog1.png);
+    
+}
+
+.background2{
+    background-image:linear-gradient(to right, #00000088, #00000088), url(../Images/blog2.png);
+
+}
+
+.background3{
+    background-image:linear-gradient(to right, #00000088, #00000088), url(../Images/blog3.png);
+    background-position: center;    
+}
+
+.title-blog{
+    height: auto;
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+a.title-blog{
+    text-decoration: none;
+    margin: 20px;
+    margin-top: 26px;
+    background-color: #426A5A;
+    border-radius: 6px;
+}
+
+/* ============== SECTION 2 ================ */
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #426A5A;
+
+}
+
+.section-2 h2{
+    color: #426A5A;
+    margin-bottom: 20px;
+}
+
+.section-2 p{
+    width: 40%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-2 a{
+    text-decoration: none;
+    color: #426A5A;
+}
+
+.section-2 a:hover{
+    font-weight: 500;
+}
+
+/* ============== SECTION 3 ================ */
+.section-3{
+    height: 500px;
+    background-color: #426A5A;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3 img{
+    width: 24rem;
+    height: 24rem;
+}
+
+.form-contact{
+    margin-left: 30px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.controsl, .controsl-mens{
+    padding: 8px;
+    background: #86A486;
+    border: 0;
+    margin: 8px 0;
+    height: 2.4rem;
+    border-radius: 15px;
+}
+
+.controsl-mens{
+    height: 8rem;
+}
+
+.boton{
+    height: 2.5rem;
+    border-radius: 15px; 
+    border: none;  
+    background: #305350; 
+}
+
+.wave-3{
+    position: relative;
+    margin-top: -6rem;
+}
+
+/* ============== FOOTER ================ */
+.footer{
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.footer img{
+    width: 11rem;
+}
+
+.titulo-contact{
+    color: #86A486;
+    font-weight: 700;
+}
+
+.copyright{
+    color: #426A5A;
+    font-weight: 500;
+}
