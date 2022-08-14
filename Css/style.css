@@ -14,7 +14,7 @@ html{
 /*======== HEADER STYLE ====================*/
 .container-hero{
     width: 100%;
-    min-height: 92vh;
+    min-height: 46rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,15 +34,42 @@ html{
     z-index: 500;
 }
 
+/*======== NAV MENU ====================*/
+.nav-menu{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    z-index: 1000;
+}
+
+.nav-item{
+    margin: 0 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+}
+
 /*======== OVERLAY ====================*/
 .overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 92%;
+    height: 85%;
     background: rgba(0, 0, 0, 0.46);
-    z-index: 600;
+    z-index: 800;
 }
 
 /*======== TITLE STYLE ====================*/
@@ -64,7 +91,7 @@ html{
     width: 100%;
     position: absolute;
     top: 44.6rem;
-    z-index: 650;
+    z-index: 1000;
 }
 
 /*======== BUTTON ====================*/
@@ -96,46 +123,23 @@ html{
 }
 
 .logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     position: absolute;
-    margin-top: -11rem;
-    z-index: 700;
+    margin-top: -7rem;
+    z-index: 1200;
 }
 
 .logo img{
     width: 13rem;
 }
 
-/*======== NAV MENU ====================*/
-.nav-menu{
-    width: 100%;
-    height: auto;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-around;
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-
-.nav-list{
-    display: flex;
-    list-style: none;
-    
-}
-
-.nav-item{
-    margin: 0 20px;
-}
-
-.nav-link{
-    text-decoration: none;
-    color: #426A5A;
-}
-
 /*========  SECTION BLOGS ====================*/
 .blogs{
     width: 80%;
     display: flex;
-    margin: 3rem auto;
+    margin: 5rem auto;
     justify-content: space-around;
 
 }
@@ -160,15 +164,44 @@ html{
     object-fit: cover;
 }
 
+/* ============== SECTION 1 ================ */
+
+.section-1{
+    display: flex;
+    margin-top: 7rem;
+    flex-direction: column;
+    align-items: center;
+    color: #426A5A;
+}
+
+.section-1 h2{
+    color: #426A5A;
+    margin-bottom: 20px;
+}
+
+.section-1 p{
+    width: 40%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-1 a{
+    text-decoration: none;
+    color: #426A5A;
+}
+
+.section-1 a:hover{
+    font-weight: 500;
+}
+
 /* ========== BACKGROUNDS BLOGS ================ */
+
 .background1{
-    background-image:linear-gradient(to right, #00000088, #00000088), url(../Images/blog1.png);
-    
+    background-image:linear-gradient(to right, #00000088, #00000088), url(../Images/blog1.png);  
 }
 
 .background2{
     background-image:linear-gradient(to right, #00000088, #00000088), url(../Images/blog2.png);
-
 }
 
 .background3{
@@ -192,35 +225,6 @@ a.title-blog{
     border-radius: 6px;
 }
 
-/* ============== SECTION 2 ================ */
-
-.section-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #426A5A;
-
-}
-
-.section-2 h2{
-    color: #426A5A;
-    margin-bottom: 20px;
-}
-
-.section-2 p{
-    width: 40%;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.section-2 a{
-    text-decoration: none;
-    color: #426A5A;
-}
-
-.section-2 a:hover{
-    font-weight: 500;
-}
 
 /* ============== SECTION 3 ================ */
 .section-3{
@@ -244,9 +248,13 @@ a.title-blog{
     justify-content: center;
 }
 
+.controsl{
+    padding: 9px;
+}
+
 .controsl, .controsl-mens{
     padding: 8px;
-    background: #86A486;
+    background: #e2e9e2;
     border: 0;
     margin: 8px 0;
     height: 2.4rem;
@@ -261,7 +269,7 @@ a.title-blog{
     height: 2.5rem;
     border-radius: 15px; 
     border: none;  
-    background: #305350; 
+    background: #86A486; 
 }
 
 .wave-3{
@@ -283,7 +291,7 @@ a.title-blog{
 }
 
 .titulo-contact{
-    color: #86A486;
+    color: #ffffff;
     font-weight: 700;
 }
 
